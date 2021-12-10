@@ -1,8 +1,8 @@
-------=_Part_4_1293241549.1639141044080
+------=_Part_4_1293241549.1639142597613
 Content-Type: text/xml; charset=utf-8
 
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><SOAP-ENV:Body><ztrade:GetLastTradePrice xmlns:ztrade="http://wombat.ztrade.com"><ztrade:symbol>SUNW</ztrade:symbol></ztrade:GetLastTradePrice></SOAP-ENV:Body></SOAP-ENV:Envelope>
-------=_Part_4_1293241549.1639141044080
+------=_Part_4_1293241549.1639142597613
 Content-Type: text/plain
 
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -117,4 +117,4 @@ Content-Type: text/plain
     </servlet-mapping>
 </web-app>
 
-------=_Part_4_1293241549.1639141044080--
+------=_Part_4_1293241549.1639142597613--

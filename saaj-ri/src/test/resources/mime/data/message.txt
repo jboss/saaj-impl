@@ -1,9 +1,9 @@
-------=_Part_9_990897274.1639141043040
+------=_Part_9_990897274.1639142596639
 Content-Type: text/xml; charset=utf-8
 Content-Id: soapPart
 
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><SOAP-ENV:Body><ztrade:GetLastTradePrice xmlns:ztrade="http://wombat.ztrade.com"><ztrade:symbol>SUNW</ztrade:symbol></ztrade:GetLastTradePrice></SOAP-ENV:Body></SOAP-ENV:Envelope>
-------=_Part_9_990897274.1639141043040
+------=_Part_9_990897274.1639142596639
 Content-Type: text/xml
 Content-ID: attachmentPart
 
@@ -52,4 +52,4 @@ Content-ID: attachmentPart
 
 <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/"><Body/></Envelope>
 
-------=_Part_9_990897274.1639141043040--
+------=_Part_9_990897274.1639142596639--
