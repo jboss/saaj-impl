@@ -155,14 +155,14 @@ public class StartParameterTest extends TestCase {
         msg.saveChanges();
 
 	FileOutputStream sentFile =
-            new FileOutputStream("src/test/resources/mime/data/message.txt");
+            new FileOutputStream("src/test/mime/data/message.txt");
 	msg.writeTo(sentFile);
 	sentFile.close();
-        changeAndSaveMimeHeaders(msg, "src/test/resources/mime/data/headers.txt");
+        changeAndSaveMimeHeaders(msg, "src/test/mime/data/headers.txt");
 
         SOAPMessage newMsg = 
-            getModifiedMessage("src/test/resources/mime/data/headers.txt",
-                               "src/test/resources/mime/data/message.txt");
+            getModifiedMessage("src/test/mime/data/headers.txt",
+                               "src/test/mime/data/message.txt");
         assertFalse("newMsg has an empty body",
                     newMsg.getSOAPBody().getChildElements().hasNext());
         assertTrue("Soap part has the Content-Id: attachmentPart",

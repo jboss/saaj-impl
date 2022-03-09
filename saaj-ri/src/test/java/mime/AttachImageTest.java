@@ -99,13 +99,13 @@ public class AttachImageTest extends TestCase {
 
 		// Save the soap message to file
 		FileOutputStream sentFile = new FileOutputStream(
-			"src/test/resources/mime/data/java_logo_sent.jpg");
+			"src/test/mime/data/java_logo_sent.jpg");
 		msg.writeTo(sentFile);
 		sentFile.close();
 
 		// See if we get the image object back
 		FileInputStream fin= new FileInputStream(
-			"src/test/resources/mime/data/java_logo_sent.jpg");
+			"src/test/mime/data/java_logo_sent.jpg");
 		SOAPMessage newMsg = mf.createMessage(msg.getMimeHeaders(), fin);
 
                 SOAPElement elment = newMsg.getSOAPBody();
@@ -293,13 +293,13 @@ public class AttachImageTest extends TestCase {
 		
 		// Save the soap message to file
 		FileOutputStream sentFile = new FileOutputStream(
-			"src/test/resources/mime/data/saving.cnt");
+			"src/test/mime/data/saving.cnt");
 		msg.writeTo(sentFile);
 		sentFile.close();
 
 		// See if we get the attachment back
 		FileInputStream fin= new FileInputStream(
-			"src/test/resources/mime/data/saving.cnt");
+			"src/test/mime/data/saving.cnt");
 		SOAPMessage newMsg = mf.createMessage(msg.getMimeHeaders(), fin);
 		Iterator<AttachmentPart> i = newMsg.getAttachments();
 		while(i.hasNext()) {
@@ -338,13 +338,13 @@ public class AttachImageTest extends TestCase {
 
 		// Save the soap message to file
 		FileOutputStream sentFile = new FileOutputStream(
-			"src/test/resources/mime/data/saving_text.cnt");
+			"src/test/mime/data/saving_text.cnt");
 		msg.writeTo(sentFile);
 		sentFile.close();
 
 		// See if we get the attachment back
 		FileInputStream fin= new FileInputStream(
-			"src/test/resources/mime/data/saving_text.cnt");
+			"src/test/mime/data/saving_text.cnt");
 		SOAPMessage newMsg = mf.createMessage(msg.getMimeHeaders(), fin);
 		Iterator<AttachmentPart> i = newMsg.getAttachments();
 		while(i.hasNext()) {
@@ -623,13 +623,13 @@ public class AttachImageTest extends TestCase {
 
 		// Save the soap message to file
 		FileOutputStream sentFile = new FileOutputStream(
-			"src/test/resources/mime/data/java_logo_sent.jpg");
+			"src/test/mime/data/java_logo_sent.jpg");
 		msg.writeTo(sentFile);
 		sentFile.close();
 
 		// See if we get the image object back
 		FileInputStream fin= new FileInputStream(
-			"src/test/resources/mime/data/java_logo_sent.jpg");
+			"src/test/mime/data/java_logo_sent.jpg");
 		SOAPMessage newMsg = mf.createMessage(msg.getMimeHeaders(), fin);
 		Iterator<AttachmentPart> i = newMsg.getAttachments();
                 //System.out.println("Count before remove:" + newMsg.countAttachments());

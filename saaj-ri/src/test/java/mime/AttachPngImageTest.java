@@ -99,13 +99,13 @@ public class AttachPngImageTest extends TestCase {
 
 		// Save the soap message to file
 		FileOutputStream sentFile = new FileOutputStream(
-			"src/test/resources/mime/data/image_sent.png");
+			"src/test/mime/data/image_sent.png");
 		msg.writeTo(sentFile);
 		sentFile.close();
 
 		// See if we get the image object back
 		FileInputStream fin= new FileInputStream(
-			"src/test/resources/mime/data/image_sent.png");
+			"src/test/mime/data/image_sent.png");
 		SOAPMessage newMsg = mf.createMessage(msg.getMimeHeaders(), fin);
 		Iterator<AttachmentPart> i = newMsg.getAttachments();
 		while(i.hasNext()) {
